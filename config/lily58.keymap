@@ -24,8 +24,8 @@
             bindings = <
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                          &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
 &kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
-&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk SQT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk LS(SQT)
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &sk RIGHT_SHIFT
                                   &kp LALT  &kp LEFT_GUI  &tog 1  &kp SPACE    &kp ENTER  &kp BACKSPACE  &tog 2  &kp RALT
             >;
 
@@ -70,11 +70,11 @@
 
         game_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp Q   &kp W   &kp E   &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A   &kp S   &kp D   &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &kp LSHFT  &kp SPACE    &trans  &trans  &trans  &trans
             >;
         };
     };
