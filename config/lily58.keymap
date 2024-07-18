@@ -26,7 +26,7 @@
 &kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
 &sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk LS(SQT)
 &kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &sk RIGHT_SHIFT
-                                  &kp LALT  &kp LEFT_GUI  &tog 1  &kp SPACE    &kp ENTER  &kp BACKSPACE  &tog 2  &kp RALT
+                                  &kp LALT  &kp LEFT_GUI  &mo 1   &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo 2   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,11 +60,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans     &trans     &trans  &trans     &trans                    &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &none      &kp HOME   &trans  &kp END    &trans                    &trans        &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &trans                    &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &kp PG_UP  &kp PG_DN  &trans  &trans     &trans  &trans    &trans  &trans        &kp N1  &kp N2  &kp N3  &trans  &trans
-                              &trans  &trans     &trans  &trans    &trans  &trans        &trans  &trans
+&trans  &trans     &trans     &trans    &trans     &trans                       &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &none      &kp HOME   &kp UP    &kp END    &trans                       &trans        &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &kp LCTRL  &kp LEFT   &kp DOWN  &kp RIGHT  &trans                       &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &kp PG_UP  &kp PG_DN  &trans    &trans     &trans     &trans    &trans  &trans        &kp N1  &kp N2  &kp N3  &trans  &trans
+                              &trans    &trans     &kp LSHFT  &trans    &trans  &trans        &trans  &trans
             >;
         };
 
