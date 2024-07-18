@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                          &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &none
-&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &none
-&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &none
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp BACKSLASH
-                                  &kp LALT  &kp LEFT_GUI  &tog 1  &kp SPACE    &kp ENTER  &kp BACKSPACE  &tog 2  &none
+&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                          &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
+&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
+&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                  &kp LALT  &kp LEFT_GUI  &tog 1  &kp SPACE    &kp ENTER  &kp BACKSPACE  &tog 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -48,8 +48,6 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &trans
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         nav_layer {
@@ -62,14 +60,22 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans    &trans    &trans  &trans     &trans                    &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &none     &trans    &trans  &trans     &trans                    &trans        &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                    &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans    &trans    &trans  &trans     &trans  &trans    &trans  &trans        &kp N1  &kp N2  &kp N3  &trans  &trans
-                            &trans  &trans     &trans  &trans    &trans  &trans        &trans  &trans
+&trans  &trans     &trans     &trans    &trans     &trans                    &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &none      &trans     &kp HOME  &kp END    &trans                    &trans        &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans                    &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &kp PG_UP  &kp PG_DN  &trans    &trans     &trans  &trans    &trans  &trans        &kp N1  &kp N2  &kp N3  &trans  &trans
+                              &trans    &trans     &trans  &trans    &trans  &trans        &trans  &trans
             >;
+        };
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        game_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
