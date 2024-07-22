@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans            &trans                &trans                 &trans  &trans
-&trans      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &none   &kp F8            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &trans
-&trans      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &none   &kp LESS_THAN     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none   &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &trans
-                                        &trans        &trans        &trans        &trans    &trans  &trans  &trans            &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                    &trans             &trans            &trans                &trans                 &trans  &trans
+&trans      &kp F2        &kp UNDERSCORE  &kp AMPERSAND  &kp PIPE      &kp COLON                       &none              &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &trans
+&trans      &kp EXCL      &kp MINUS       &kp PLUS       &kp EQUAL     &kp PRCNT                       &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none   &trans
+&trans      &trans        &kp ASTERISK    &kp DOLLAR     &kp AT_SIGN   &trans        &trans    &trans  &kp SQT            &kp LESS_THAN     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &trans
+                                          &trans         &trans        &trans        &trans    &trans  &trans             &trans            &trans
             >;
         };
 
@@ -70,7 +70,7 @@
 
         game_layer {
             bindings = <
-&trans  &trans        &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ALT  &kp Q   &kp W   &kp E   &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LSHFT     &kp A   &kp S   &kp D   &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL     &kp Z   &kp X   &kp C   &kp V      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
