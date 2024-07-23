@@ -24,7 +24,7 @@
             bindings = <
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                          &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
 &kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
-&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk LS(SQT)
+&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk SQT
 &kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &sk RIGHT_SHIFT
                                   &kp LALT  &kp LEFT_GUI  &mo 1   &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo 2   &kp RALT
             >;
@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                    &trans             &trans            &trans                &trans                 &trans  &trans
-&trans      &kp HASH      &kp UNDERSCORE  &kp AMPERSAND  &kp PIPE      &kp COLON                       &none              &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &trans
-&trans      &kp EXCL      &kp MINUS       &kp PLUS       &kp EQUAL     &kp PRCNT                       &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none   &trans
-&trans      &trans        &kp ASTERISK    &kp DOLLAR     &kp AT_SIGN   &kp CARET     &trans    &trans  &kp SQT            &kp LESS_THAN     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &trans
-                                          &trans         &trans        &trans        &trans    &trans  &trans             &trans            &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                    &trans            &trans             &trans                &trans                 &trans        &trans
+&trans      &kp HASH      &kp UNDERSCORE  &kp AMPERSAND  &kp PIPE      &kp COLON                       &none             &kp QUESTION       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none         &trans
+&trans      &kp EXCL      &kp MINUS       &kp PLUS       &kp EQUAL     &kp PRCNT                       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none         &trans
+&trans      &none         &kp ASTERISK    &kp DOLLAR     &kp AT_SIGN   &kp CARET     &trans    &trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &trans
+                                          &trans         &trans        &trans        &trans    &trans  &trans            &trans             &trans
             >;
         };
 
@@ -60,11 +60,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans     &trans     &trans    &trans     &trans                       &trans        &trans  &trans  &kp PERCENT  &kp FSLH   &trans
-&trans  &none      &kp HOME   &kp UP    &kp END    &trans                       &trans        &kp N7  &kp N8  &kp N9       &kp STAR   &trans
-&trans  &kp LEFT   &kp UP     &kp DOWN  &kp RIGHT  &trans                       &kp NUMBER_0  &kp N4  &kp N5  &kp N6       &kp MINUS  &trans
-&trans  &kp PG_UP  &kp PG_DN  &trans    &trans     &trans     &trans    &trans  &kp NUMBER_0  &kp N1  &kp N2  &kp N3       &kp PLUS   &trans
-                              &trans    &trans     &kp LSHFT  &trans    &trans  &trans        &trans  &trans
+&trans  &trans     &trans          &trans  &trans     &trans                       &trans        &trans  &trans  &kp PERCENT  &kp FSLH   &trans
+&trans  &none      &kp HOME        &none   &kp END    &trans                       &trans        &kp N7  &kp N8  &kp N9       &kp STAR   &trans
+&trans  &kp LEFT   &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans                       &kp NUMBER_0  &kp N4  &kp N5  &kp N6       &kp MINUS  &trans
+&trans  &kp PG_UP  &kp PG_DN       &trans  &trans     &trans     &trans    &trans  &kp NUMBER_0  &kp N1  &kp N2  &kp N3       &kp PLUS   &trans
+                                   &trans  &trans     &kp LSHFT  &trans    &trans  &trans        &trans  &trans
             >;
         };
 
