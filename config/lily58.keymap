@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                          &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
-&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
-&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M          &kp N   &kp E      &kp I    &kp O          &sk RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &kp LBKT     &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_CONTROL
-                                  &kp LALT  &kp LEFT_GUI  &mo 1   &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo 2   &kp RALT
+&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                   &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
+&kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                                    &kp J          &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
+&sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                                    &kp M          &kp N   &kp E      &kp I    &kp O          &sk RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &lt 3 LEFT_BRACKET    &kp RBKT   &kp K          &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_CONTROL
+                                  &kp LALT  &kp LEFT_GUI  &mo 1   &kp SPACE             &kp ENTER  &kp BACKSPACE  &mo 2   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
