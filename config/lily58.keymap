@@ -42,10 +42,10 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                    &trans            &trans             &trans                &trans                 &trans  &trans
-&trans      &kp HASH      &kp UNDERSCORE  &kp AMPERSAND  &kp PIPE      &kp PERCENT                     &none             &kp QUESTION       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &trans
-&trans      &kp EXCL      &kp MINUS       &kp PLUS       &kp EQUAL     &kp COLON                       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none   &trans
-&trans      &none         &kp ASTERISK    &kp DOLLAR     &kp AT_SIGN   &kp CARET     &trans    &trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                    &trans            &trans             &trans                &trans                 &trans        &trans
+&trans      &kp HASH      &kp UNDERSCORE  &kp AMPERSAND  &kp PIPE      &kp PERCENT                     &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none         &trans
+&trans      &kp EXCL      &kp MINUS       &kp PLUS       &kp EQUAL     &kp COLON                       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans      &none         &kp ASTERISK    &kp DOLLAR     &kp AT_SIGN   &kp CARET     &trans    &trans  &kp COMMA         &kp PERIOD         &kp LEFT_BRACE        &kp RIGHT_BRACE        &none         &trans
                                           &trans         &trans        &trans        &trans    &trans  &trans            &trans             &trans
             >;
         };
