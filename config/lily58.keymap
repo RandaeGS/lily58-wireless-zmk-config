@@ -9,6 +9,19 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;    // The time to distinguish between a tap and a hold
+            quick-tap-ms = <125>;       // Enable quick tap
+            global-quick-tap;           // Enable global quick tap
+            flavor = "tap-preferred";    // Prefer tap when both tap and hold are possible
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,7 +37,7 @@
             bindings = <
 &kp ESC           &kp N1          &kp N2          &kp N3            &kp N4              &kp N5                          &kp N6  &kp N7               &kp N8             &kp N9          &kp N0           &kp BSLH
 &kp TAB           &kp Q           &kp W           &kp F             &kp P               &kp B                           &kp J   &kp L                &kp U              &kp Y           &kp SEMICOLON    &kp DELETE
-&sk LSHFT         &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G                           &kp M   &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt LEFT_ALT I  &mt RIGHT_GUI O  &sk RIGHT_SHIFT
+&sk LSHFT         &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LEFT_CONTROL T  &kp G                           &kp M   &hm RIGHT_CONTROL N  &hm RIGHT_SHIFT E  &hm LEFT_ALT I  &hm RIGHT_GUI O  &sk RIGHT_SHIFT
 &kp LEFT_CONTROL  &kp Z           &kp X           &kp C             &kp D               &kp V   &tog 2       &tog 0     &kp K   &kp H                &kp COMMA          &kp DOT         &kp FSLH         &kp RIGHT_CONTROL
                                                   &kp LALT          &kp LEFT_GUI        &mo 1   &kp SPACE    &kp ENTER  &mo 2   &kp BACKSPACE        &kp RALT
             >;
@@ -33,13 +46,7 @@
         };
 
         symbol_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
+            // Rest of the layers remain the same...
             display-name = "Lower";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                    &trans            &trans             &trans                &trans                 &trans         &trans
@@ -51,13 +58,6 @@
         };
 
         nav_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
             display-name = "Raise";
             bindings = <
 &trans  &trans      &trans            &kp K_PLAY_PAUSE  &trans     &kp PRINTSCREEN                    &trans        &trans  &none   &kp PERCENT  &kp FSLH   &trans
