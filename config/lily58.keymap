@@ -25,7 +25,7 @@
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                          &kp N6  &kp N7         &kp N8     &kp N9   &kp N0         &kp BSLH
 &kp TAB           &kp Q   &kp W   &kp F     &kp P         &kp B                           &kp J   &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp DELETE
 &sk LSHFT         &kp A   &kp R   &kp S     &kp T         &kp G                           &kp M   &kp N          &kp E      &kp I    &kp O          &sk RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &tog 2       &tog 3     &kp K   &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D         &kp V   &tog 2       &tog 0     &kp K   &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_CONTROL
                                   &kp LALT  &kp LEFT_GUI  &mo 1   &kp SPACE    &kp ENTER  &mo 2   &kp BACKSPACE  &kp RALT
             >;
 
@@ -64,17 +64,7 @@
 &trans  &none       &kp PG_DN         &kp PG_UP         &none      &trans                             &trans        &kp N7  &kp N8  &kp N9       &kp STAR   &trans
 &trans  &kp LEFT    &kp DOWN_ARROW    &kp UP            &kp RIGHT  &kp END                            &kp NUMBER_0  &kp N4  &kp N5  &kp N6       &kp MINUS  &trans
 &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT        &kp HOME   &trans           &trans    &trans  &kp NUMBER_0  &kp N1  &kp N2  &kp N3       &kp PLUS   &trans
-                                      &trans            &trans     &kp LSHFT        &trans    &trans  &trans        &trans  &trans
-            >;
-        };
-
-        game_layer {
-            bindings = <
-&trans  &kp N1        &kp N2  &kp N3  &kp N4            &kp N5                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ALT  &kp Q   &kp W   &kp E             &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT     &kp A   &kp S   &kp D             &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL     &kp Z   &kp X   &kp C             &kp V      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &kp LEFT_CONTROL  &kp LSHFT  &kp SPACE    &trans  &trans  &trans  &trans
+                                      &trans            &trans     &trans           &trans    &trans  &trans        &trans  &trans
             >;
         };
     };
