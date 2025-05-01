@@ -39,7 +39,7 @@
 &none  &kp Q           &kp W           &kp F             &kp P               &kp B                              &kp J            &kp L                &kp U              &kp Y           &kp SEMICOLON    &none
 &none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LEFT_CONTROL T  &kp G                              &kp M            &hm RIGHT_CONTROL N  &hm RIGHT_SHIFT E  &hm LEFT_ALT I  &hm RIGHT_GUI O  &none
 &none  &kp Z           &kp X           &kp C             &kp D               &kp V      &tog 2       &tog 0     &kp K            &kp H                &kp COMMA          &kp DOT         &kp FSLH         &none
-                                       &none             &kp ESCAPE          &lt 2 TAB  &kp SPACE    &kp ENTER  &lt 1 BACKSPACE  &lt 3 DELETE         &none
+                                       &none             &lt 1 ESC           &lt 2 TAB  &kp SPACE    &kp ENTER  &lt 1 BACKSPACE  &lt 3 DELETE         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -71,11 +71,11 @@
 
         FUNCTION_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans                    &trans  &trans   &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans   &trans                    &trans  &trans   &trans  &trans  &trans   &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                    &kp F6  &kp F7   &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &kp F11  &trans  &trans    &trans  &trans  &kp F12  &trans  &trans  &trans   &trans
-                        &trans  &trans   &trans  &trans    &trans  &trans  &trans   &trans
+&trans  &trans      &trans            &trans      &trans   &trans                    &trans  &trans   &trans  &trans  &trans   &trans
+&trans  &trans      &trans            &trans      &trans   &trans                    &trans  &trans   &trans  &trans  &trans   &trans
+&trans  &kp F1      &kp F2            &kp F3      &kp F4   &kp F5                    &kp F6  &kp F7   &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp F11  &trans  &trans    &trans  &trans  &kp F12  &trans  &trans  &trans   &trans
+                                      &trans      &trans   &trans  &trans    &trans  &trans  &trans   &trans
             >;
         };
     };
